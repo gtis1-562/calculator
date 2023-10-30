@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bigelow+Rules&family=Martian+Mono:wght@600&family=Open+Sans:ital,wght@1,500&family=Pixelify+Sans:wght@600;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    background-color: #AAAAAA;
+    border: 2px solid black;
+    width: 22%;
+    height: 70%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#innerContainer {
+    /* background-color: antiquewhite; */
+    width: 90%;
+    height: 95%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#input{
+    background-color: #EEEEEE;
+    border: 2px solid black;
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#backMath{
+    /* background-color: #AAAAFF; */
+    height: 30%;
+}
+#numInput{
+    /* background-color: #FFAAAA; */
+    height: 50%;
+    font-size: 50px;
+}
+.backInput{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    font-family: 'Roboto' , sans-serif;
+}
+
+
+#clearDelete{
+    /* background-color:blue; */
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#clear{
+    background-color: #FFAAAA;
+}
+#clear:hover{
+    background-color: #cd8888;
+}
+#delete{
+    background-color: #AAAAFF;
+}
+#delete:hover{
+    background-color: #8f8fdb;
+}
+.deleteClear{
+    height: 100%;
+    width: 48%;
+    border-radius: 5px;
+}
+.deleteClear:hover{
+    cursor: pointer;
+}
+
+
+
+
+#numbers {
+    /* background-color:blueviolet; */
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.numbers{
+    background-color: #EEEEEE;
+    height: 21%;
+    width: 23%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.numbers:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+/* Medi Query */
+
+@media only screen and (max-width: 940px){
+    #container{
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+}
