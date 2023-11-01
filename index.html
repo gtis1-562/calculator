@@ -11,20 +11,36 @@
     <div id="container">
         <div id="innerContainer">
             <div id="input">
-                <div class="backInput" id="backMath">9 + 8 =</div>
-                <div class="backInput" id="numInput">17</div>
+                <input type="text" class="backInput" id="numInput" readonly>
+                <!-- <div class="backInput" id="numInput">17</div> -->
             </div>
             <div id="clearDelete">
-                <button class="deleteClear" id="clear">CLEAR</button>
-                <button class="deleteClear" id="delete">DELETE</button>
+                <button class="deleteClear" id="clear" onclick="clearDisplay()">CLEAR</button>
+                <button class="deleteClear" id="delete" onclick="deleteOne()">DELETE</button>
             </div>
             <div id="numbers">
-                <button class="numbers">7</button> <button class="numbers">8</button> <button class="numbers">9</button> <button class="numbers">÷</button>
-                <button class="numbers">4</button> <button class="numbers">5</button> <button class="numbers">6</button> <button class="numbers">x</button>
-                <button class="numbers">1</button> <button class="numbers">2</button> <button class="numbers">3</button> <button class="numbers">-</button>
-                <button class="numbers">.</button> <button class="numbers">0</button> <button class="numbers">=</button> <button class="numbers">+</button>
+                <button class="numbers" onclick="appendToDisplay('7')">7</button> 
+                <button class="numbers" onclick="appendToDisplay('8')">8</button> 
+                <button class="numbers" onclick="appendToDisplay('9')">9</button> 
+                <button class="numbers" id="divide" onclick="appendToDisplay('/')">÷</button>
+                <button class="numbers" onclick="appendToDisplay('4')">4</button> 
+                <button class="numbers" onclick="appendToDisplay('5')">5</button> 
+                <button class="numbers" onclick="appendToDisplay('6')">6</button> 
+                <button class="numbers" id="multiply" onclick="appendToDisplay('*')">x</button>
+                <button class="numbers" onclick="appendToDisplay('1')">1</button> 
+                <button class="numbers" onclick="appendToDisplay('2')">2</button> 
+                <button class="numbers" onclick="appendToDisplay('3')">3</button> 
+                <button class="numbers" id="subtract" onclick="appendToDisplay('-')">-</button>
+                <button class="numbers" onclick="appendToDisplay('.')">.</button> 
+                <button class="numbers" onclick="appendToDisplay('0')">0</button> 
+                <button class="numbers" id="equals" onclick="calculator()" >=</button> 
+                <button class="numbers" id="add" onclick="appendToDisplay('+')">+</button>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; <span></span><a href="https://github.com/gtis1-562"> Gerardo Talavera</a></p>
+    </footer>
 </body>
 </html>

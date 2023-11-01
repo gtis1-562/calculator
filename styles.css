@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 #container {
     background-color: #AAAAAA;
@@ -46,11 +47,13 @@ body{
     height: 30%;
 }
 #numInput{
-    /* background-color: #FFAAAA; */
     height: 50%;
     font-size: 50px;
+    border: none;
+    text-align: right;
 }
 .backInput{
+    background-color: #EEEEEE;
     width: 90%;
     display: flex;
     flex-direction: row-reverse;
@@ -112,6 +115,18 @@ body{
     background-color: #d4d4d4;
     cursor: pointer;
 }
+
+footer {
+    width: 100%;
+    background-color:  #c0c0c082;
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* Medi Query */
 
